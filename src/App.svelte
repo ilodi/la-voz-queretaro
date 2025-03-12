@@ -1,12 +1,9 @@
 <script>
-// @ts-nocheck
-
   import { onMount } from 'svelte';
   import gsap from 'gsap';
 
   onMount(() => {
     gsap.from(".fade-in", { opacity: 0, y: 50, duration: 1, stagger: 0.3 });
-    gsap.from(".cta-button", { scale: 0.8, opacity: 0, duration: 1, delay: 1 });
   });
 </script>
 
@@ -29,32 +26,27 @@
     height: 100vh;
     padding: 20px;
   }
-  .logo {
-    width: 150px;
-    margin-bottom: 20px;
-  }
   h1 {
     font-size: 2.5rem;
     margin-bottom: 10px;
   }
-  .cta-button {
+  .cta-link {
+    display: inline-block;
     padding: 15px 30px;
     font-size: 1.2rem;
     background-color: #EC1F25;
     color: white;
-    border: none;
     border-radius: 5px;
-    cursor: pointer;
+    text-decoration: none;
     transition: background 0.3s;
   }
-  .cta-button:hover {
+  .cta-link:hover {
     background-color: #C81A1E;
   }
 </style>
 
 <div class="container">
-  <img src="./assets/logo.svg" alt="La Voz Querétaro" class="logo fade-in" />
   <h1 class="fade-in">🎙️ Bienvenidos a La Voz Querétaro</h1>
   <p class="fade-in">Tu fuente confiable de noticias, política y deportes en Querétaro.</p>
-  <button class="cta-button" href="https://www.instagram.com/la_voz_queretaro">Escúchalo ahora</button>
+  <a href="https://www.instagram.com/la_voz_queretaro/" class="cta-link fade-in" target="_blank">Escúchalo ahora</a>
 </div>
