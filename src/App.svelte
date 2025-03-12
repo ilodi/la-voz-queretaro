@@ -53,7 +53,7 @@
 </style>
 
 <div class="container">
-  <img src="/assets/logo.svg" alt="La Voz Querétaro" class="logo fade-in" />
+  <img src="./assets/logo.svg" alt="La Voz Querétaro" class="logo fade-in" />
   <h1 class="fade-in">🎙️ Bienvenidos a La Voz Querétaro</h1>
   <p class="fade-in">Tu fuente confiable de noticias, política y deportes en Querétaro.</p>
   <button class="cta-button" href="https://www.instagram.com/la_voz_queretaro">Escúchalo ahora</button>
